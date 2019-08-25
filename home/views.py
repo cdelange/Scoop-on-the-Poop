@@ -31,7 +31,7 @@ def buttons(request):
 
         bathroomBreakEntry = BathroomBreak(dog=dogEntry, type_of_bathroom=typeOfBreak, person=personEntry)
         bathroomBreakEntry.save()
-        return HttpResponse(person)
+        return HttpResponse(walker)
 
     else:
         return HttpResponse('Not a post request')
