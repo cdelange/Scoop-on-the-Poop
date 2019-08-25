@@ -18,9 +18,9 @@ def buttons(request):
         else:
             dogEntry = Dog.objects.filter(name=dog).first()
 
-        if walker == 1:
+        if walker == "1":
             person = "Casey"
-        else:
+        else if walker == "0":
             person = "Allie"
 
         if not Person.objects.filter(name=person).exists():
