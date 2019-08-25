@@ -20,7 +20,7 @@ def buttons(request):
 
         if walker == "1":
             person = "Casey"
-        else if walker == "0":
+        elif walker == "0":
             person = "Allie"
 
         if not Person.objects.filter(name=person).exists():
