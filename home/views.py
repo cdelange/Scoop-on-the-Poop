@@ -18,7 +18,7 @@ def buttons(request):
         else:
             dogEntry = Dog.objects.filter(name=dog).first()
 
-        if walker == "False":
+        if walker == 1:
             person = "Casey"
         else:
             person = "Allie"
