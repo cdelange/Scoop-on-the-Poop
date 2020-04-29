@@ -6,45 +6,10 @@ A project that links a real-world interface to a SQL database using to Django, P
 * Django
 * ssh
 
-
-## COMING SOON
-
-## Getting Started
-
-
-### Prerequisites
-
-
-### Installing
-
-
-## Running the tests
-
-
-### Break down into end to end tests
-
-
-### And coding style tests
-
-
-## Deployment
-
-
-## Contributing
-
-
-## Versioning
-
-
-
-## Authors
-
-
-## License
-
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
-
 ## Acknowledgments
 
 * Zuri and Nova
+
+
+## COMING SOON
 
