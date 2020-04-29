@@ -6,9 +6,11 @@ A project that links a real-world interface to a SQL database using to Django, P
 {Django}
 {ssh}
 
+
+## COMING SOON
+
 ## Getting Started
 
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
 
 ### Prerequisites
 
