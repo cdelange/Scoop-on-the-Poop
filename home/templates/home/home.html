@@ -1,30 +1,122 @@
 {% load humanize %}
 {% load static %}
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-<link rel='icon' href="https://freeiconshop.com/wp-content/uploads/edd/bone-flat.png">
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
-<link rel="apple-touch-icon" sizes="57x57" href="https://i.imgur.com/UOZqQaE.jpg" />
+  <link rel='icon' href="https://freeiconshop.com/wp-content/uploads/edd/bone-flat.png">
 
-<link href="https://fonts.googleapis.com/css?family=Merriweather&display=swap" rel="stylesheet">
+  <link rel="apple-touch-icon" sizes="57x57" href="https://i.imgur.com/UOZqQaE.jpg" />
+
+  <link href="https://fonts.googleapis.com/css?family=Merriweather&display=swap" rel="stylesheet">
 
 
-<link rel='stylesheet' type='text/css' href="{% static 'home/main.css' %}">
+  <link rel='stylesheet' type='text/css' href="{% static 'home/main.css' %}">
 
-<title>Dog Tracker</title>
+  <title>Dog Tracker</title>
 
 </head>
 
+<body>
+  <div class='container'>
+    <div class='row'>
+      <div class='col-xs-12 col-centered'>
+        <table class='table table-hover table-bordered'>
+          <tbody>
+            <tr>
+              <td>
+                Zuri' last poop
+              </td>
+              <td>
+                {{recentzuripoop.date_created|naturaltime}} with {{ recentzuripoop.person }}
+              </td>
+            </tr>
 
-<h2>Zuri' last poop: {{recentzuripoop.date_created|naturaltime}} with {{ recentzuripoop.person }} </h2>
-<h2>Zuri' last pee: {{recentzuripee.date_created|naturaltime}} with {{ recentzuripee.person }}</h2>
-<h2>Nova's last poop: {{recentnovapoop.date_created| naturaltime }} with {{ recentnovapoop.person }}</h2>
-<h2>Nova's last pee: {{recentnovapee.date_created | naturaltime }} with {{ recentnovapee.person }}</h2>
-<h2>Total poops: {{ totalpoops }}</h2>
-<h2>Total pees: {{ totalpees }}</h2>
-<h2>Zuri' total pees: {{ zuripees.count }}</h2>
-<h2>Zuri' total poops: {{ zuripoops.count }}</h2>
-<h2>Nova's total pees: {{ novapees.count }}</h2>
-<h2>Nova's total poops: {{ novapoops.count }}</h2>
+            <tr>
+              <td>
+                Zuri' last pee
+              </td>
+              <td>
+                {{recentzuripee.date_created|naturaltime}} with {{ recentzuripee.person }}
+              </td>
+            </tr>
+
+            <tr>
+              <td>
+                Nova's last poop
+              </td>
+              <td>
+                {{recentnovapoop.date_created| naturaltime }} with {{ recentnovapoop.person }}
+              </td>
+            </tr>
+
+            <tr>
+              <td>
+                Nova's last pee
+              </td>
+              <td>
+                {{recentnovapee.date_created | naturaltime }} with {{ recentnovapee.person }}
+              </td>
+            </tr>
+
+            <tr>
+              <td>
+                Total poops
+              </td>
+              <td>
+                {{ totalpoops }}
+              </td>
+            </tr>
+
+            <tr>
+              <td>
+                Total pees
+              </td>
+              <td>
+                {{ totalpees }}
+              </td>
+            </tr>
+
+            <tr>
+              <td>
+                Zuri' total pees
+              </td>
+              <td>
+                {{ zuripees.count }}
+              </td>
+            </tr>
+
+            <tr>
+              <td>
+                Zuri' total poops
+              </td>
+              <td>
+                {{ zuripoops.count }}
+              </td>
+            </tr>
+
+            <tr>
+              <td>
+                Nova's total pees
+              </td>
+              <td>
+                {{ novapees.count }}
+              </td>
+            </tr>
+
+            <tr>
+              <td>
+                Nova's total poops
+              </td>
+              <td>
+                {{ novapoops.count }}
+              </td>
+            </tr>
+          </tbody>
+        </div>
+      </div>
+    </div>
+  </body>

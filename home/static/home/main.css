@@ -1,3 +1,20 @@
 h2 {
-font-family: 'Merriweather', serif;
+  font-family: 'Merriweather', serif;
+}
+
+.container {
+  height: 100%;
+  padding-top: 20px;
+  background-color: #165241;
+  max-width: 750px;
+}
+
+table {
+  font-size: 20px;
+  color:white;
+}
+
+.col-centered{
+  float: none;
+  margin: 0 auto;
 }
