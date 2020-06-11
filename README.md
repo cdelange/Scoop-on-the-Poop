@@ -14,6 +14,3 @@ When a button is pressed (Zuri Pee for example), a Post request is sent to https
 
 * Zuri and Nova
 
-
-## COMING SOON
-
